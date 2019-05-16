@@ -1,0 +1,229 @@
+.widget
+  position: relative
+  @include margin(0 0 50px 0)
+  @include padding(35px)
+  border: 1px solid #e7e7e7
+  & h3.widget-title
+    position: absolute
+    top: -9px
+    left: 5px
+    background: $widget-title-bg-color
+    @include font-size($widget-title-font-size)
+    font-family: $widget-title-font-family
+    line-height: $widget-title-line-height
+    text-align: center
+    font-weight: 600
+    letter-spacing: 0.5px
+    padding: 0 10px 0 10px
+    @include margin(0)
+
+  & select, img
+    max-width: 100%
+    height: auto
+
+  & ol, ul
+    @include margin(0)
+    @include padding(0)
+    list-style-type: none
+
+    & li
+      @include margin(5px 0 5px 0)
+      border-bottom: 1px dotted lighten($light-grey, 25%)
+      position: relative
+      &:after
+        position: absolute
+        top: 5px
+        right: 0
+        content: "\e9bc"
+        font-family: 'jam-icons'
+        color: $light-coffee
+        font-size: 11px
+      &:last-child
+        margin: 0
+        border: unset
+      & .sub-menu
+        @include padding(0 0 0 8px)
+      & a
+        display: inline-block
+        text-decoration: none
+        font-size: 13px
+        line-height: 34px
+        font-family: $extra-font
+        font-weight: 500
+        &:hover
+          color: $widget-link-hover-color
+
+
+  & #searchform
+    & input[type=text]
+      border-width: 2px
+      padding: 8px
+      width: 100%
+    & input[type=submit]
+      border-radius: 0 
+  & #wp-calendar
+    width: 100%
+    & caption
+      @include margin(0 0 8px 0)
+    & td:not(#prev)
+      position: relative
+      & a
+        text-decoration: none
+        color: $light-coffee
+        &:after
+          position: absolute
+          font-family: 'jam-icons'
+          content: "\e9fa"
+          top: -10px
+          left: auto
+          vertical-align: top
+          color: $light-coffee
+          font-size: 8px
+
+  & .tagcloud
+    & a
+      padding: 3px 16px
+      background: $black
+      color: $white
+      display: inline-block
+      text-decoration: none
+      border: 1px solid $black
+      @include margin(2px 0 2px 0)
+      font-size: 13px
+      letter-spacing: 0.3px
+      &:hover
+        background: $white
+        color: $black
+
+/* ============================= */
+/** Footer Widgets **/
+/*============================= */
+.first-footer-widget-area
+  & .footer-widget
+    padding-left: 0
+.last-footer-widget-area
+  & .footer-widget
+    padding-right: 0
+.footer-widget
+  padding: 0 20px
+  @include for-tablet-portrait-only
+    padding: 0 10px
+  @include for-phone-only
+    padding: unset
+  @include margin(0 0 25px 0)
+  @include for-phone-only
+    margin: 0 0 10.5px 0
+  & *
+    color: $footer-text-color
+    font-size: $footer-widget-generic-font-size
+    font-family: $extra-font
+    letter-spacing: 0.4px
+  & .footer-widget-title
+    font-weight: 600
+    letter-spacing: 0.5px
+    padding: 8px 0 20px 0
+    @include margin(0)
+  & ol, ul
+    @include margin(0)
+    @include padding(0)
+    list-style-type: none
+    & li
+      @include margin(5px 0 5px 0)
+      border-bottom: 1px dotted lighten($light-grey, 25%)
+      position: relative
+      &:after
+        position: absolute
+        top: 5px
+        right: 0
+        content: "\e9bc"
+        font-family: 'jam-icons'
+        color: $white
+        font-size: 11px
+      &:last-child
+        margin: 0
+        border: unset
+      & .sub-menu
+        @include padding(0 0 0 8px)
+      & a
+        display: inline-block
+        text-decoration: none
+        font-family: $extra-font
+        font-weight: 400
+        line-height: 34px
+        &:hover
+          color: $widget-link-hover-color
+
+/* Elements in widgets */
+/*=========================================
+ /** NP RECENT POSTS                    **/
+/*==========================================
+.widget-post
+  margin-bottom: 20px
+  padding-bottom: 8px
+  border-bottom: 1px dotted lighten($light-grey, 25%)
+  & .widget-post-meta
+    @include font-size(13px)
+    @include margin(0)
+    & a
+      color: $light-green
+      text-decoration: none
+      &:hover
+        color: $widget-link-hover-color
+  & .widget-post-title
+    @include font-size(14px)
+    font-family: $extra-font
+    margin: 0
+    line-height: 20px
+    & a
+      font-weight: 500
+      text-decoration: none
+  & .widget-post-readmore
+      text-decoration: none
+  & .widget-post-after-title
+    display: flex
+    justify-content: space-between
+    & .widget-post-date
+      font-size: 12px
+      color: lighten($accent-text,20%)
+  & .widget-post-author
+    &:before
+      content: '\ea6d'
+      margin: 0 3px 0 0
+      font-family: 'jam-icons'
+      @include font-size(10px)
+.widget-side-post
+  margin-bottom: 20px
+  padding-bottom: 14px
+  border-bottom: 1px dotted lighten($light-grey, 25%)
+  & .widget-post-title
+    font-family: $extra-font
+    font-weight: 600
+    margin: 0
+    line-height: 16px
+    & a
+      font-weight: 500
+      font-size: 13px
+      &:hover
+        color: $widget-link-hover-color
+.np_widget_recent_posts_type_3
+  & .widget-post
+    @include margin(0 0 30px 0)
+
+.np_widget_recent_posts
+  & .np_widget_recent_posts_type_2
+    &:last-child
+      & .widget-side-post
+        border: none
+        margin: 0
+        padding: 0
+
+.np_widget_recent_posts
+  & .np_widget_recent_posts_type_1
+    &:last-child
+      & .widget-post
+        border: none
+        margin: 0
+        padding: 0
+/*=========================================
+ /** NP RECENT POSTS ENDS                **/
+/*==========================================

@@ -1,0 +1,37 @@
+/*========================================*/
+/** Responsive Breakpoints
+/**=======================================*/
+@mixin for-very-small-phone
+  @media (min-width: 320px) and (max-width: 360px)
+    @content
+@mixin for-phone-only
+  @media (max-width: 599px)
+    @content
+@mixin for-tablet-portrait-up
+  @media (min-width: 600px)
+    @content
+@mixin for-tablet-portrait-only
+  @media(min-width: 600px) and (max-width: 768px)
+    @content
+@mixin for-tablet-landscape-up
+  @media (min-width: 769px)
+    @content
+@mixin for-tablet-landscape-only-till-1024
+  @media (min-width: 769px) and (max-width: 1024px)
+    @content
+@mixin for-tablet-landscape-only-till-1199
+  @media (min-width: 769px) and (max-width: 1199px)
+    @content
+@mixin for-desktop-up
+  @media (min-width: 1200px)
+    @content
+@mixin for-small-desktop-only
+  @media (min-width: 1200px) and (max-width: 1366px)
+    @content
+@mixin for-medium-desktop-only
+  @media (min-width: 1367px) and (max-width: 1590px)
+    @content
+@mixin for-big-desktop-up
+  @media (min-width: 1591px)
+    @content
+

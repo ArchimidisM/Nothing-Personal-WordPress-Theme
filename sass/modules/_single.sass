@@ -1,0 +1,142 @@
+/*============================================================
+/** Single Post / Page
+/*============================================================
+.single-post
+  & h1,h2,h3:not(.post-navigation-title):not(.related-posts-title),h4:not(.related-post-title),h5,h6
+    font-weight: $single-item-headings-font-weight
+  & blockquote
+    margin-left: 10px
+    padding-left: 20px
+    border-left: 3px solid $single-item-blockquote-border-color
+    color: $single-blockquote-color
+    font-size: $single-item-blockquote-font-size
+    line-height: $single-item-blockquote-line-height
+  & .single-post-tags
+    padding: 0
+    & li
+      display: inline-block
+      margin-right: 20px
+      & a
+        font-family: $extra-font
+        font-size: $single-item-tags-font-size
+        line-height: $single-item-tags-line-height
+        color: $light-coffee
+        text-decoration: none
+        text-transform: uppercase
+        letter-spacing: 0.5px
+        &:hover
+          color: $black
+
+/*=========================================== */
+/** Post Navigation                           */
+/**=========================================== */
+.np-post-navigation
+  margin-bottom: 50px
+  & h3
+    font-family: $post-navigation-title-font
+    font-size: $post-navigation-title-font-size
+    text-transform: uppercase
+    font-weight: 600
+    line-height: $post-navigation-title-line-height
+    letter-spacing: .5px
+    color: $post-navigation-title-color
+  & .prevNextPost
+    position: relative
+    padding: 10px 30px
+    height: 120px
+    background-size: cover
+    display: flex
+    align-items: center
+    & p
+      margin: 0
+      font-size: 13px
+      line-height: 31px
+      color: #e8e8e8
+      position: relative
+      letter-spacing: 0.4px
+      z-index: 99
+      font-family: $post-navigation-item-font
+    & h4
+      margin: 0
+      & a
+        margin: 0
+        color: $post-navigation-item-title-color
+        position: relative
+        z-index: 99
+        text-decoration: none
+    & .overlay-link
+      background: rgba(80,80,80, 0.65)
+      position: absolute
+      bottom: 0
+      right: 0
+      left: 0
+      top: 0
+      &:hover
+        background: rgba(80,80,80, 0.90)
+/*=========================================== */
+/** Related Posts                                */
+/**=========================================== */
+.np-related-posts
+  & h3
+    font-family: $related-posts-title-font
+    font-size: 14px
+    text-transform: uppercase
+    font-weight: 600
+    line-height: 14.4px
+    letter-spacing: .5px
+    color: #1b1a1a
+  & .single-related-post
+    &:hover
+      & .related-featured-image img
+        filter: brightness(0.94)
+        transform: translate(0,-2px)
+        transition: all .25s ease-in
+        box-shadow: 0 7px 22px rgba(200,200,200,0.45)
+    & .related-featured-image
+      margin: 0 0 15px 0
+    & .related-post-date
+      font-size: 13px
+      line-height: 14.2px
+      letter-spacing: 0.5px
+      color: #989c9e
+    & .related-post-title
+      font-size: $related-posts-item-font-size
+      line-height: $related-posts-title-line-height
+      margin: 5px 0 10px 0
+      font-family: $related-posts-title-font
+      & a
+        text-decoration: none
+        font-weight: 500
+/**================================ */
+/** AUTHOR BIO                      */
+/**================================= */
+.np-author-bio
+  @include margin(0 0 30px 0)
+  @include padding(0 0 30px 0)
+  border-bottom: 1px dotted #e7e7e7
+  & .author-image
+    margin-right: 30px
+    border-radius: 50%
+  & .np-author-name
+    font-size: $author-name-font-size
+    line-height: $author-name-line-height
+    font-family: $author-name-font-family
+    font-weight: 600
+    color: $author-name-color
+  & .author-bio
+    font-size: $author-bio-font-size
+    line-height: $author-bio-line-height
+    color: $author-bio-color
+
+/*========================================================= */
+/** SINGLE PAGE
+/** ======================================================== */
+.single-page
+  & .single-page-title
+    font-family: $extra-font
+    letter-spacing: 0.5px
+    text-align: center
+    font-size: $single-page-title-size
+    font-weight: 500
+    line-height: $single-page-title-line-height
+    @include margin(0 0 30px 0)

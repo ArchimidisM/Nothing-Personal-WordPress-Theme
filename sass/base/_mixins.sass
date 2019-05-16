@@ -1,0 +1,95 @@
+@import "_functions.sass"
+@import "_colors.sass"
+@import "_typography.sass"
+/*============================================================
+/** Mixins
+/*** Heading Margin (Margins based on the context of the element)
+/*============================================================
+@mixin transition($which:all, $time:550ms, $ease:ease-out)
+  -webkit-transition: $which $time $ease
+  -moz-transition: $which $time $ease
+  -o-transition: $which $time $ease
+  transition: $which $time $ease
+
+@mixin heading-margin($context: 'generic')
+  @if ($context == 'site-title')
+    margin: 8px 0 0 0
+  @if ($context == 'generic')
+    margin: $generic-heading-margin
+  @if ($context == 'list-item')
+    margin: $list-item-heading-margin
+  @if ($context == 'generic')
+    margin: $generic-heading-margin
+  @if ($context == 'footer-widget-title')
+    margin: 0 0 30px 0
+  @if ($context == 'main-widget-title')
+    margin: 0 0 25px 0
+
+@mixin heading-size($context: '')
+  @if ($context == 'footer-widget')
+    font-size: $footer-widget-title-font-size
+
+@mixin heading($step, $base-value: $generic-font-size, $scale-factor: $generic-scale, $context:'generic')
+  font-weight: $font-weight-bold
+  font-family: $headings-font
+  color: $accent-headings
+  @include heading-margin($context)
+  @if ($step == 1)
+    font-size: $base-value * pow($generic-scale ,4)
+  @if ($step == 2)
+    font-size: $base-value * pow($generic-scale ,3)
+  @if ($step == 3)
+    font-size: $base-value * pow($generic-scale ,2)
+  @if ($step == 4)
+    font-size: $base-value * pow($generic-scale ,1)
+
+@mixin small-heading($step, $base-value: $generic-font-size, $scale-factor: $generic-scale)
+  font-weight: $font-weight-bold
+  @if ($step == 5)
+    font-size: $base-value
+  @if ($step == 6)
+    font-size: $base-value/$scale-factor
+
+@mixin link($link, $visit, $hover, $active)
+  color: $link
+  font-weight: $font-weight-regular
+  &:hover
+    color: $link
+  &:focus
+    color: $link
+  &:active
+    color: $link
+
+@mixin list($margin:0, $padding:0, $list-type:none)
+  margin: $margin
+  padding: $padding
+  list-style-type: $list-type
+
+
+@mixin margin($values...)
+  @each $var in $values
+    margin: #{$var}
+
+@mixin padding($values...)
+  @each $var in $values
+    padding: #{$var}
+
+@mixin text-align($align:left)
+  text-align: $align
+
+@mixin line-height($height: $generic-line-height)
+  line-height: $height
+
+@mixin font-size($font-size: $generic-font-size)
+  font-size: $font-size
+
+
+$max: 100
+$offset: 5
+$unit: 'px'
+@mixin list-loop($className, $styleName)
+  $i: 0
+  @while $i <= $max
+    #{$className + $i}
+      #{''$styleName}: #{$i + $unit}
+    $i: $i + $offset

@@ -1,0 +1,116 @@
+@import "../base/_mixins.sass"
+@import "_breakpoints.sass"
+/*============================================================
+/** Layout and helpers                                      */
+/*============================================================
+.np-container-full-np
+  & .row
+    margin-left: auto
+    margin-right: auto
+    & .col-xs-12
+      padding-left: 0
+      padding-right: 0
+.np-container-full
+  max-width: 100%
+  margin: 0 auto
+
+.np-container-larger
+  max-width: 1260px
+  margin: 0 auto
+
+.np-container
+  max-width: 1180px
+  margin: 0 auto
+
+.np-container-large
+  max-width: 1040px
+  margin: 0 auto
+
+.np-container-medium
+  max-width: 996px
+  margin: 0 auto
+
+.np-container-small
+  max-width: 784px
+  margin: 0 auto
+
+.np-container-xs
+  max-width: 592px
+  margin: 0 auto
+
+.text-center
+  @include text-align(center)
+
+.text-right
+  @include text-align(right)
+.text-left
+  @include text-align(left)
+
+.remove-line-height
+  @include line-height(0)
+
+.remove-text-decoration
+  text-decoration: none
+
+.d-flex
+  display: flex
+  flex-flow: wrap
+.full-center-flex
+  justify-content: center
+  align-items: center
+.full-height
+  height: 100%
+.no-margin-top
+  margin-top: 0
+.no-margin-bottom
+  margin-bottom: 0
+
+.no-radius
+  border-radius: 0
+
+@include list-loop('.pad-l-','padding-left')
+@include list-loop('.pad-r-','padding-right')
+@include list-loop('.pad-t-','padding-top')
+@include list-loop('.pad-b-','padding-bottom')
+@include list-loop('.marg-b-','margin-bottom')
+@include list-loop('.marg-t-','margin-top')
+
+.pad-r-35
+  @include for-phone-only
+    padding: unset
+
+/*=======================================  */
+/** HIDE / SHOW CLASSES                    */
+/*======================================== */
+.hide
+  display: none
+.show
+  display: block
+.show-flex
+  display: flex
+.align-baseline
+  align-items: baseline
+
+/*=== MOBILE PHONE - UP TO 599px ===*/
+.show-phone-only
+  @include for-phone-only
+    display: block
+
+.hide-phone-only
+  @include for-phone-only
+    display: none
+
+/*=== TABLET   ===*/
+.show-table-portrait
+  @include for-tablet-portrait-only
+    display: block
+.hide-table-portrait
+  @include for-tablet-portrait-only
+    display: none
+
+.show-tablet-landscape
+  @include for-tablet-landscape-only-till-1024
+    display: block
+.show-desktop-only
+  @include for-desktop-up
+    display: block

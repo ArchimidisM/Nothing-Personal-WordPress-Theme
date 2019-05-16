@@ -1,0 +1,26 @@
+.np-topbar
+  @include padding(4px 0 4px 0)
+  @include font-size(13px)
+  background: darken($white, 5%)
+  & a
+    text-decoration: none
+  & .np-topbar-nav
+    & li
+      &:hover > .sub-menu
+        box-shadow: unset
+    & li.current-menu-item
+      &:after
+        content: unset
+      & a
+        font-weight: bold
+  & .np-social-list
+    text-align: right
+    & li
+      display: inline-block
+      margin: 0 5px 0 0
+      &:last-child
+        margin-right: 0
+      & a
+        @include font-size($social-icon-font-size)
+
+

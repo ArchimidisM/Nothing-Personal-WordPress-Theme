@@ -1,0 +1,484 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Nothing Personal\n"
+"POT-Creation-Date: 2019-03-31 23:25+0300\n"
+"PO-Revision-Date: 2019-03-31 23:25+0300\n"
+"Last-Translator: \n"
+"Language-Team: Akisthemes.com\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_nx;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: comments.php:43
+#, php-format
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:327 inc/filters.php:44
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:328 inc/filters.php:45
+msgid "Install Plugins"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:330 inc/filters.php:47
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:332 inc/filters.php:49
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:333 inc/filters.php:50
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:385 inc/filters.php:102
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:386
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:387
+#: ext-inc/class-tgm-plugin-activation.php:3159 inc/filters.php:103
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:388 inc/filters.php:104
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:390 inc/filters.php:106
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:392 inc/filters.php:108
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:394 inc/filters.php:110
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:395 inc/filters.php:111
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:396 inc/filters.php:112
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:397 inc/filters.php:113
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:1982
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2388
+#, php-format
+msgid "All <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2603
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2608
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2614
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:3498
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:3501
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:3503
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:3507
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:3509
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:3512
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:3515
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr ""
+
+#: ext-inc/class-tgm-plugin-activation.php:3520
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.js:11
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.min.js:1
+msgid "<style id=\""
+msgstr ""
+
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.js:11
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.min.js:1
+msgid "head"
+msgstr ""
+
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.js:11
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.min.js:1
+msgid "<nav>"
+msgstr ""
+
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.js:11
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.min.js:1
+msgid "<div class=\"nav-container\">"
+msgstr ""
+
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.js:11
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.min.js:1
+msgid "<a class=\"hc-nav-trigger "
+msgstr ""
+
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.js:11
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.min.js:1
+msgid "<div class=\"nav-wrapper nav-wrapper-"
+msgstr ""
+
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.js:11
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.min.js:1
+msgid "<div class=\"nav-content\">"
+msgstr ""
+
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.js:11
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.min.js:1
+msgid "<ul>"
+msgstr ""
+
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.js:11
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.min.js:1
+msgid "<span class=\"nav-item\">"
+msgstr ""
+
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.js:11
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.min.js:1
+msgid "<li>"
+msgstr ""
+
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.js:11
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.min.js:1
+msgid "<span class=\"nav-next\">"
+msgstr ""
+
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.js:11
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.min.js:1
+msgid "<label for=\""
+msgstr ""
+
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.js:11
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.min.js:1
+msgid "<input type=\"checkbox\" id=\""
+msgstr ""
+
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.js:11
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.min.js:1
+msgid "<li class=\"nav-back\"><a href=\"#\">"
+msgstr ""
+
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.js:11
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.min.js:1
+msgid "<li class=\"nav-close\"><a href=\"#\">"
+msgstr ""
+
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.js:11
+#: front-assets/vendors/hc-nav/hc-offcanvas-nav.min.js:1
+msgid "#"
+msgstr ""
+
+#: functions.php:51
+msgid "Top Menu"
+msgstr ""
+
+#: functions.php:52
+msgid "Main Menu"
+msgstr ""
+
+#: functions.php:53
+msgid "Mobile Menu"
+msgstr ""
+
+#: functions.php:54
+msgid "Copyright Menu"
+msgstr ""
+
+#: functions.php:338
+msgid "After importing this data everything will be in place like the demo."
+msgstr ""
+
+#: inc/customizer/default-options.php:56
+msgid "Upload A Mobile Logo"
+msgstr ""
+
+#: inc/customizer/panels/theme-options-panel.php:16
+msgid "Header / Navigation"
+msgstr ""
+
+#: inc/customizer/panels/theme-options-panel.php:24
+msgid "Post Grid / Carousel"
+msgstr ""
+
+#: inc/customizer/panels/theme-options-panel.php:32
+msgid "Slider(via shortcode)"
+msgstr ""
+
+#: inc/customizer/panels/theme-options-panel.php:40
+msgid "Blog Page"
+msgstr ""
+
+#: inc/customizer/panels/theme-options-panel.php:48
+msgid "Single Post settings"
+msgstr ""
+
+#: inc/customizer/panels/theme-options-panel.php:56
+msgid "Archive/Category/Tag Settings"
+msgstr ""
+
+#: inc/customizer/panels/theme-options-panel.php:64
+msgid "Footer settings"
+msgstr ""
+
+#: inc/customizer/panels/theme-options-panel.php:72
+msgid "Copyright settings"
+msgstr ""
+
+#: inc/customizer/panels/theme-styling-panel.php:17
+msgid "Header styling"
+msgstr ""
+
+#: inc/customizer/panels/theme-styling-panel.php:25
+msgid "Post Grid styling"
+msgstr ""
+
+#: inc/customizer/panels/theme-styling-panel.php:33
+msgid "Main Elements Styling"
+msgstr ""
+
+#: inc/customizer/panels/theme-styling-panel.php:41
+msgid "Footer styling"
+msgstr ""
+
+#: inc/customizer/panels/theme-styling-panel.php:49
+msgid "Copyright styling"
+msgstr ""
+
+#: inc/customizer/panels/theme-typography-panel.php:17
+msgid "Basic Typography"
+msgstr ""
+
+#: inc/customizer/settings/theme-typography-options.php:42
+msgid "Body Font"
+msgstr ""
+
+#: inc/customizer/settings/theme-typography-options.php:54
+msgid "Headings Font"
+msgstr ""
+
+#: inc/customizer/settings/theme-typography-options.php:66
+msgid "Secondary Font"
+msgstr ""
+
+#: inc/template-tags.php:82
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:99
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: tpl/elements/blog/blog-element-type-1.php:46
+#: tpl/elements/posts/post-tpl-1.php:59 tpl/elements/posts/post-tpl-2.php:63
+#: tpl/elements/posts/post-tpl-3.php:61 tpl/elements/posts/post-tpl-4.php:64
+#: tpl/elements/posts/post-tpl-5.php:70 tpl/list-item/plain-list-item.php:52
+#: tpl/list-item/side-post-left.php:38
+#, php-format
+msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
+msgstr ""
+
+#: tpl/elements/general/post-navigation.php:15
+msgid "READ ALSO"
+msgstr ""
+
+#: tpl/elements/posts/related-posts.php:15
+msgid "RELATED POSTS"
+msgstr ""
+
+#: tpl/generic/pagination/nav-below.php:14
+#, php-format
+msgid " %s Previous posts"
+msgstr ""
+
+#: tpl/generic/pagination/nav-below.php:19
+#, php-format
+msgid "Next posts %s"
+msgstr ""

@@ -1,0 +1,120 @@
+/*=============================
+/** Navigation + Logos
+/**============================
+
+.np-main-navigation
+  padding: 10px 0
+  & li.menu-item-has-children
+    &:after
+      display: inline-block
+      content: "\e9ba"
+      margin-left: 0
+      font-family: 'jam-icons'
+      font-size: 12px
+      vertical-align: middle
+
+  & li.current-menu-item, li.current-page-ancestor
+    &:after
+      display: inline-block
+      content: "\e9fa"
+      font-family: 'jam-icons'
+      font-size: 5px
+      margin-left: 4px
+      vertical-align: super
+      color: $navigation-links-hover-color
+
+  & li
+    display: inline-block
+    margin: 0 20px 0 0
+
+    &:last-child
+      margin-right: 0
+
+    &:hover > .sub-menu
+      margin: 0
+      background: $accent-bg
+      padding-left: 0
+      z-index: 9999
+      opacity: 1
+      visibility: visible
+      //box-shadow: 1px 1px 10px darken($accent-bg, 5%)
+      @include transition(opacity, 100ms, ease-out)
+
+    & .sub-menu
+      opacity: 0
+      visibility: hidden
+      position: absolute
+      border: 1px solid darken($accent-bg, 5%)
+      @include text-align(left)
+      @include transition(opacity, 340ms, ease-out)
+
+      &:after, &:before
+        bottom: 100%
+        left: 16px
+        border: solid transparent
+        content: " "
+        height: 0
+        width: 0
+        position: absolute
+        pointer-events: none
+
+      &:after
+        border-color: rgba(136, 183, 213, 0)
+        border-bottom-color: $accent-bg
+        border-width: 7px
+        margin-left: -7px
+
+      &:before
+        border-color: transparent
+        border-bottom-color: darken($accent-bg, 5%)
+        border-width: 9px
+        margin-left: -9px
+
+      & li.current-menu-item
+        &:after
+          content: unset
+        & a
+          color: $current-navigation-item-color
+      & li.menu-item-has-children
+        &:after
+          display: inline-block
+          content: "\e9bc"
+          margin-left: 0
+          font-family: 'jam-icons'
+          font-size: 12px
+          position: absolute
+          right: 5px
+          top: 6px
+      & li
+        position: relative
+        margin: 0
+        display: block
+        & .sub-menu // 2nd level dropdowns
+          left: 100%
+          top: -1px
+          border-left: unset
+          box-shadow: unset
+          &:after, &:before
+            content: unset
+          & li
+            min-width: 160px
+            max-width: 270px
+
+        & a
+          @include padding(9px 30px 9px 15px)
+          display: block
+
+    & a
+      text-decoration: none
+      line-height: $navigation-line-height
+      @include font-size($navigation-font-size)
+      font-family: $navigation-font
+      color: $navigation-links-color
+      font-weight: 500
+      letter-spacing: 0.5px
+      &:hover
+        color: $navigation-links-hover-color
+
+.mobile-trigger
+  @include font-size(30px)
+  text-decoration:  none 

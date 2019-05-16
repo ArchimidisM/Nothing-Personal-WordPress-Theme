@@ -1,0 +1,65 @@
+@import "_mixins.sass"
+@import "_wordpress.sass"
+/*============================================================
+/* Base elements + stuff
+/** Body Copyright
+/** Headings
+/** Links
+/*============================================================
+/* Great debug trick by https://medium.freecodecamp.org/heres-my-favorite-weird-trick-to-debug-css-88529aa5a6a3 */
+//*
+//  color:                    hsla(210, 100%, 100%, 0.9) !important
+//  background:               hsla(210, 100%,  50%, 0.5) !important
+//  outline:    solid 0.25rem hsla(210, 100%, 100%, 0.5) !important
+body
+  font-family: $body-font
+  line-height: $generic-line-height
+  font-size: $generic-font-size
+  background-color: $accent-bg
+  color: $accent-text
+  font-weight: $font-weight-regular
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
+
+h1
+  @include heading(1)
+
+h2
+  @include heading(2)
+
+h3
+  @include heading(3)
+
+h4
+  @include heading(4)
+
+h5
+  @include small-heading(5)
+
+h6
+  @include small-heading(6)
+
+a
+  @include link($accent-link,$accent-link,$accent-link-hover,$accent-link)
+  @include transition(all,340ms,ease-in)
+
+ol, ul
+  @include list()
+
+/** Generic content wrappers */
+.home
+  & .np-content
+    padding: 50px 0
+.single-post
+  & .np-content
+    padding: 70px 0 
+.page
+  & .np-content
+    padding: 70px 0
+.archive
+  & .np-content
+    padding: 50px 0
+.search
+  & .np-content
+    padding: 50px 0

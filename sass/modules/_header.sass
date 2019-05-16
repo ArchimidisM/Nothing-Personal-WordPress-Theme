@@ -1,0 +1,53 @@
+/*============================================================
+/** The main header and its styles.#
+/** It contains the header image as well and the logos / site
+/** title / tagline.
+/*============================================================
+.site-title
+  @include font-size($site-title-font-size)
+  line-height: $site-title-line-height
+  @include heading-margin('site-title')
+  & a
+    text-decoration: none
+.site-tagline
+  @include margin(0 0 8px 0)
+  line-height: $site-tagline-line-height
+/*=============================================================
+/* Logo / Site title & Tagline
+/**============================================================
+
+.np-header-type-1
+  border-bottom: 1px solid darken($accent-bg,5%)
+  @include padding(4px 0 4px 0)
+  & .np-logo-wrapper
+    @include padding(8px 0 8px 0)
+
+.np-header-type-2
+  & .np-logo-wrapper
+    @include padding(10px 0 10px 0)
+  & .np-header-nav
+    border-top: 1px solid darken($accent-bg,5%)
+    border-bottom: 1px solid darken($accent-bg,5%)
+
+.np-header-type-3
+  & .np-main-navigation
+    box-shadow: 0 1px 3px #f2f1f1
+  & .no-logo-wrapper
+    padding: 15px 0
+  & .np-logo-wrapper
+    @include padding(35px 0 0 0)
+
+/*===========================================================*/
+/** Header Image
+/**===========================================================*/
+.np-header-image-wrapper
+  @include margin(0)
+  & .np-header-image
+    height: 550px
+    background-size: cover !important
+
+/*=============================================================*/
+/** Featured area - Widget Area
+/**============================================================*/
+.np-featured-area
+  @include margin(40px 0 40px 0)

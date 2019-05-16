@@ -1,0 +1,22 @@
+/*============================================================
+/** The footer and its styles                               */
+/*============================================================
+.np-footer-wrapper
+  background: $footer-bg-color
+  color: $footer-text-color
+  @include padding(50px 0 50px 0)
+  & h3
+    font-family: $footer-title-font
+    font-weight: 600
+    @include heading-margin('footer-widget-title')
+    @include heading-size('footer-widget')
+
+.np-copyright-wrapper
+  font-family: $footer-title-font
+  background: lighten($footer-bg-color,10%)
+  color: $footer-text-color
+  @include padding(10px 0 10px 0)
+  @include font-size(11px)
+  line-height: 12.5px
+  & p
+    margin: 3px 0
