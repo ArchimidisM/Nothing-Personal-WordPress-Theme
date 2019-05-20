@@ -3,7 +3,8 @@ Contributors: ArchimidisM
 Tags: blog, news, one-column, two-columns,right-sidebar,translation-ready, custom-background, custom-colors, custom-header, footer-widgets, custom-logo, custom-menu
 Requires at least: 4.5.1
 Tested up to: 5.2
-Stable tag: 1.0.4
+Requires PHP: 5.6
+Stable tag: 1.0.5
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -48,6 +49,9 @@ Support is done via the WordPress.org forums.
 = 1.0.4 =
 * Minor fixes
 
+= 1.0.5 =
+* Corrected readme.txt - added required PHP
+
 == Resources ==
 
 Nothing Personal WordPress Theme, Copyright 2019 akisthemes.com
@@ -73,8 +77,3 @@ The images in the screenshot and all the images are under the CC0 licence:
 * https://stocksnap.io/photo/A5G6T8F11N , by Adam Whitlock CC0 License
 * https://stocksnap.io/photo/MLEPUKHYUU , by Icons8 team CC0 License
 * https://stocksnap.io/photo/NUG1YRRSJI , by Ylanite Koppens CC0 License
-
-* All global variables , image-sizes etc have been prefixed.
-* Removed unused code for the class font selector
-* Unable to see the implementation of social URL can you please conform this one nothing_personal_has_social(). - Completely removed.
-* All the theme mods have been sanitized however there are 1-2 cases that I use them....
